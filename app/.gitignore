@@ -1,5 +1,5 @@
 /build
-**/res/drawable/*
+!**/res/drawable/*
 **/res/mipmap*
 **/res/xml/*
 !**/res/values
