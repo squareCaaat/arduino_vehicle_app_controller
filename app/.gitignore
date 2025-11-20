@@ -2,4 +2,4 @@
 **/res/drawable/*
 **/res/mipmap*
 **/res/xml/*
-**/res/values*
+!**/res/values
