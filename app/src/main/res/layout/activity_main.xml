@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bthConnectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Bluetooth Deconnection"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Control"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bthConnectionText"
+        app:layout_constraintTop_toBottomOf="@+id/bthConnectionText" />
+
+    <Button
+        android:id="@+id/fwdBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="FWD"
+        android:textSize="24sp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bthConnectionText" />
+
+    <Button
+        android:id="@+id/bwdBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="BWD"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="L"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/fwdBtn" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="R"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fwdBtn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arm Control"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/bthConnectionText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bthConnectionText" />
+
+    <Button
+        android:id="@+id/armUpBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="UP"
+        android:textSize="24sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bthConnectionText" />
+
+    <Button
+        android:id="@+id/armDownBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="DOWN"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/armLeftBtn" />
+
+    <Button
+        android:id="@+id/armLeftBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:text="L"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/armUpBtn" />
+
+    <Button
+        android:id="@+id/armRightBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="R"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toEndOf="@+id/armLeftBtn"
+        app:layout_constraintTop_toBottomOf="@+id/armUpBtn" />
+
+    <Button
+        android:id="@+id/armGrabBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="24sp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/armRightBtn"
+        app:layout_constraintTop_toTopOf="@+id/armUpBtn" />
+
+    <Button
+        android:id="@+id/armReleaseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="24sp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/armRightBtn"
+        app:layout_constraintTop_toBottomOf="@+id/armGrabBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
